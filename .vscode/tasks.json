@@ -1,0 +1,20 @@
+{
+  "label": "compile and run",
+  "type": "shell",
+  "command": "cmd",
+  "args": [
+    "/c",
+    "g++ -std=c++17 \"${file}\" -o \"${fileBasenameNoExtension}.exe\" && \"${fileBasenameNoExtension}.exe\" < input.txt > output.txt"
+  ],
+  "group": {
+    "kind": "build",
+    "isDefault": true
+  },
+  "problemMatcher": ["$gcc"],
+  "presentation": {
+    "reveal": "never",
+    "panel": "dedicated",
+    "showReuseMessage": false,
+    "clear": true
+  }
+}
